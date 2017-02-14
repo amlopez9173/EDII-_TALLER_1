@@ -69,10 +69,30 @@ int main()
 
         case 5:
             {
+                int v1[5];
+
+                printf("ingrese los 5 numeros aleatorios separados con un enter\n");
+
+                for(i=0;i<=4;i++)
+                {
+                    printf("ingrese el numero :\n");
+                    scanf("%d",&v1[i]);
+                }
+                for(i=0;i<=4;i++)
+                {
+                    printf("%d",v1[i]);
+                }
+            }
+        default:
+            {
 
             }
         }
-        n=0;
+    }
+        printf("si desea salir del menu marque 0 de lo contrario marque 1\n ")
+        scanf("%d",&n);
+        system("cls");
+
     }
     return 0;
 }
