@@ -2,16 +2,20 @@
 
 int main()
 {
-    int i, x, y, n=1,m=1,f,t,c,n1=0,n2=1;
+    int i, x, y, n=1,f,t,c,n1=0,n2=1;
+    float m=1;
     while(n==1)
     {
         printf("1: imprimir los numeros del 1 al 100\n");
         printf("2: imprimir las tablas de multiplicar de un numero, del 1 al 20\n");
         printf("3: solucionar el factorial de un numero\n");
         printf("4: solucionar el numero de fibonacci\n");
-        printf("5: pedir al usuario que ingrese 5 numeros aleatorios, y almacenarlos en un array, y mostrarlos en pantalla\n\n");
+        printf("5: pedir al usuario que ingrese 5 numeros aleatorios, y almacenarlos en un array, y mostrarlos en pantalla\n");
+        printf("6: desea salir\n\n");
         printf("Digite la opcion: ");
         scanf("%d", &x);
+
+        system("cls");
 
         switch(x)
         {
@@ -43,7 +47,7 @@ int main()
                 {
                     m=m*i;
                 }
-                printf("el factorial es: %d",m);
+                printf("el factorial es: %8.3f",m);
             }
             break;
 
@@ -80,19 +84,24 @@ int main()
                 }
                 for(i=0;i<=4;i++)
                 {
-                    printf("%d",v1[i]);
+                    printf("%d\n",v1[i]);
                 }
+
+            break;
             }
-        default:
+
+        case 6:
             {
-
+                printf("si desea salir del menu marque 0 de lo contrario marque 1\n ");
+                scanf("%d",&n);
             }
-        }
-    }
-        printf("si desea salir del menu marque 0 de lo contrario marque 1\n ")
-        scanf("%d",&n);
-        system("cls");
+            break;
+            }
+            printf("\n\n");
 
     }
+
+
+    system("cls");
     return 0;
 }
