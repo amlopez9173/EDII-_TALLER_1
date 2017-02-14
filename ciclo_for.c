@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i, x, y, n=1,m=1,f,t;
+    int i, x, y, n=1,m=1,f,t,c,n1=0,n2=1;
     while(n==1)
     {
         printf("1: imprimir los numeros del 1 al 100\n");
@@ -45,7 +45,32 @@ int main()
                 }
                 printf("el factorial es: %d",m);
             }
+            break;
 
+        case 4:
+            {
+                f=1;
+
+                printf("ingrese numero fibonacci :\n");
+                scanf("%d",&c);
+
+                printf("%d ",n1);
+
+                for(i=1;i<=c;i++)
+                {
+                    printf("%d ",f);
+                    f=n1+n2;
+                    n1=n2;
+                    n2=f;
+                }
+
+            }
+            break;
+
+        case 5:
+            {
+
+            }
         }
         n=0;
     }
