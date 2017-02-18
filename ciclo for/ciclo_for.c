@@ -3,7 +3,7 @@
 int main()
 {
     int i, x, y, n=1,f,t,c,n1=0,n2=1;
-    float m=1;
+    int m=1;
     while(n==1)
     {
         printf("1: imprimir los numeros del 1 al 100\n");
@@ -47,7 +47,7 @@ int main()
                 {
                     m=m*i;
                 }
-                printf("el factorial es: %8.3f",m);
+                printf("el factorial es: %d",m);
             }
             break;
 
